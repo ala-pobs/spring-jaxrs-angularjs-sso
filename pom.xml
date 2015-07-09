@@ -152,11 +152,11 @@
                 <artifactId>geronimo-servlet_3.0_spec</artifactId>
                 <version>${version.servlet_3.0_spec}</version>
             </dependency>
-            <dependency>
+            <!--<dependency>
                 <groupId>at.ac.tuwien.infosys</groupId>
                 <artifactId>jaxb-facets</artifactId>
                 <version>${version.jaxb-facets}</version>
-            </dependency>
+            </dependency>-->
             <dependency>
                 <groupId>com.sun.xml.bind</groupId>
                 <artifactId>jaxb-impl</artifactId>
@@ -581,7 +581,6 @@
         </pluginManagement>
     </build>
 
-<<<<<<< HEAD:pom.xml
    <modules>
     <module>amaretto-cloud-services</module>
     <module>amaretto-cloud-common</module>
@@ -591,11 +590,5 @@
     <module>amaretto-cloud-allan</module>
     <module>amaretto-cloud-darryl</module>
     <module>amaretto-cloud-janice</module>
-=======
-    <modules>
-        <module>amaretto-cloud-services</module>
-        <module>amaretto-cloud-common</module>
-    <module>amaretto-cloud-tina</module>
->>>>>>> Add tina module:amaretto-cloud-parent/pom.xml
   </modules>
 </project>
