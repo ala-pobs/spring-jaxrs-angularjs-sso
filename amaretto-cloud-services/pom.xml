@@ -27,10 +27,12 @@
             <groupId>com.ncs.amaretto</groupId>
             <artifactId>amaretto-cloud-common</artifactId>
         </dependency>
+		<!--
         <dependency>
             <groupId>at.ac.tuwien.infosys</groupId>
             <artifactId>jaxb-facets</artifactId>
         </dependency>
+		-->
         <dependency>
             <groupId>javax.ws.rs</groupId>
             <artifactId>javax.ws.rs-api</artifactId>
