@@ -152,11 +152,11 @@
                 <artifactId>geronimo-servlet_3.0_spec</artifactId>
                 <version>${version.servlet_3.0_spec}</version>
             </dependency>
-            <dependency>
+            <!--<dependency>
                 <groupId>at.ac.tuwien.infosys</groupId>
                 <artifactId>jaxb-facets</artifactId>
                 <version>${version.jaxb-facets}</version>
-            </dependency>
+            </dependency>-->
             <dependency>
                 <groupId>com.sun.xml.bind</groupId>
                 <artifactId>jaxb-impl</artifactId>

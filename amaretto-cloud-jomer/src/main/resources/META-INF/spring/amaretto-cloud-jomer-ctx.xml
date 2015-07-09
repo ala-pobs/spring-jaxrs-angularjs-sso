@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- /* * ========================================================================= 
+	* Copyright 2015 NCS Pte. Ltd. All Rights Reserved * * This software is confidential 
+	and proprietary to NCS Pte. Ltd. You shall * use this software only in accordance 
+	with the terms of the license * agreement you entered into with NCS. No aspect 
+	or part or all of this * software may be reproduced, modified or disclosed 
+	without full and * direct written authorization from NCS. * * NCS SUPPLIES 
+	THIS SOFTWARE ON AN AS IS BASIS. NCS MAKES NO * REPRESENTATIONS OR WARRANTIES, 
+	EITHER EXPRESSLY OR IMPLIEDLY, ABOUT THE * SUITABILITY OR NON-INFRINGEMENT 
+	OF THE SOFTWARE. NCS SHALL NOT BE LIABLE * FOR ANY LOSSES OR DAMAGES SUFFERED 
+	BY LICENSEE AS A RESULT OF USING, * MODIFYING OR DISTRIBUTING THIS SOFTWARE 
+	OR ITS DERIVATIVES. * ========================================================================= 
+	*/ -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+         http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd">
+
+	<import resource="classpath:META-INF/cxf/cxf.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
+
+	<jaxrs:server id="adminServices" address="/admin">
+		<jaxrs:serviceBeans>
+			<bean
+				class="com.ncs.amaretto.cloud.service.controller.UserInfoServiceController">
+				<property name="userInfoDao" ref="userInfoDao" />
+			</bean>
+		</jaxrs:serviceBeans>
+
+		<jaxrs:providers>
+			<ref bean="jsonProvider" />
+			<ref bean="wadlGenerator" />
+		</jaxrs:providers>
+	</jaxrs:server>
+
+	<bean id="jsonProvider" class="org.codehaus.jackson.jaxrs.JacksonJsonProvider" />
+
+	<bean id="wadlGenerator" class="org.apache.cxf.jaxrs.model.wadl.WadlGenerator">
+		<property name="linkJsonToXmlSchema" value="true" />
+		<property name="useJaxbContextForQnames" value="true" />
+		<property name="ignoreMessageWriters" value="true" />
+		<property name="addResourceAndMethodIds" value="true" />
+		<property name="schemaLocations">
+			<list>
+				<value>classpath:xsd/Amaretto-UserInfo.xsd</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="userInfoDao" class="com.ncs.amaretto.cloud.dao.impl.UserInfoDaoImpl" />
+
+</beans>
+
