@@ -585,5 +585,7 @@
         <module>amaretto-cloud-services</module>
         <module>amaretto-cloud-common</module>
     <module>amaretto-cloud-jomer</module>
+    <module>amaretto-cloud-tina</module>
+    <module>amaretto-cloud-leod</module>
   </modules>
 </project>
