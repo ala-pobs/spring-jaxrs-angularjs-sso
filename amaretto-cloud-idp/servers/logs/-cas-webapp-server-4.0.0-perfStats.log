@@ -79,3 +79,106 @@ Tag                                                  Avg(ms)         Min        
 Performance Statistics   2015-07-08 23:32:00 - 2015-07-08 23:33:00
 Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
 
+Performance Statistics   2015-07-09 16:24:00 - 2015-07-09 16:25:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2015-07-09 16:25:00 - 2015-07-09 16:26:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2015-07-09 16:26:00 - 2015-07-09 16:27:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2015-07-09 16:27:00 - 2015-07-09 16:28:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+AUTHENTICATE                                            11.0          11          11         0.0           1
+CREATE_TICKET_GRANTING_TICKET                           30.0          30          30         0.0           1
+GRANT_SERVICE_TICKET                                     7.0           7           7         0.0           1
+
+Performance Statistics   2015-07-09 16:28:00 - 2015-07-09 16:29:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2015-07-09 16:29:00 - 2015-07-09 16:30:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+AUTHENTICATE                                            62.0          62          62         0.0           1
+GRANT_PROXY_GRANTING_TICKET                             65.0          65          65         0.0           1
+GRANT_SERVICE_TICKET                                     1.0           1           1         0.0           1
+VALIDATE_SERVICE_TICKET                                  3.0           3           3         0.0           1
+
+Performance Statistics   2015-07-09 16:30:00 - 2015-07-09 16:31:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2015-07-09 16:31:00 - 2015-07-09 16:32:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2015-07-09 16:32:00 - 2015-07-09 16:33:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2015-07-09 16:33:00 - 2015-07-09 16:34:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2015-07-09 16:34:00 - 2015-07-09 16:35:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2015-07-09 16:35:00 - 2015-07-09 16:36:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2015-07-09 16:36:00 - 2015-07-09 16:37:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2015-07-09 16:37:00 - 2015-07-09 16:38:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2015-07-09 16:38:00 - 2015-07-09 16:39:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2015-07-09 16:39:00 - 2015-07-09 16:40:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2015-07-09 16:40:00 - 2015-07-09 16:41:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2015-07-09 16:41:00 - 2015-07-09 16:42:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2015-07-09 16:42:00 - 2015-07-09 16:43:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2015-07-09 16:43:00 - 2015-07-09 16:44:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2015-07-09 16:44:00 - 2015-07-09 16:45:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2015-07-09 16:45:00 - 2015-07-09 16:46:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2015-07-09 16:46:00 - 2015-07-09 16:47:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2015-07-09 16:47:00 - 2015-07-09 16:48:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2015-07-09 16:48:00 - 2015-07-09 16:49:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2015-07-09 16:49:00 - 2015-07-09 16:50:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2015-07-09 16:50:00 - 2015-07-09 16:51:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2015-07-09 16:51:00 - 2015-07-09 16:52:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2015-07-09 16:52:00 - 2015-07-09 16:53:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2015-07-09 16:53:00 - 2015-07-09 16:54:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2015-07-09 16:54:00 - 2015-07-09 16:55:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2015-07-09 16:55:00 - 2015-07-09 16:56:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
