@@ -581,6 +581,7 @@
         </pluginManagement>
     </build>
 
+<<<<<<< HEAD:pom.xml
    <modules>
     <module>amaretto-cloud-services</module>
     <module>amaretto-cloud-common</module>
@@ -590,5 +591,11 @@
     <module>amaretto-cloud-allan</module>
     <module>amaretto-cloud-darryl</module>
     <module>amaretto-cloud-janice</module>
+=======
+    <modules>
+        <module>amaretto-cloud-services</module>
+        <module>amaretto-cloud-common</module>
+    <module>amaretto-cloud-tina</module>
+>>>>>>> Add tina module:amaretto-cloud-parent/pom.xml
   </modules>
 </project>
