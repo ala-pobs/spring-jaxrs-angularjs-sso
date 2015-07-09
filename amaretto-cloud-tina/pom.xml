@@ -16,7 +16,7 @@
     <url>http://maven.apache.org</url>
 
     <properties>
-        <port.http.amaretto-cloud-services>8003</port.http.amaretto-cloud-services>
+        <port.http.amaretto-cloud-services>8002</port.http.amaretto-cloud-services>
         <contex.path.amaretto-cloud-services>/amaretto-cloud-tina</contex.path.amaretto-cloud-services>
     </properties>
 
