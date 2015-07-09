@@ -1,3 +1,75 @@
 This is use for POC of different technologies.
 
 Added form feature/branch1
+
+-- git clone
+
+$ cd ~/workspace
+$ git clone https://github.com/ala-pobs/spring-jaxrs-angularjs-sso.git/
+
+-- git status
+
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+
+-- branch out
+$ git checkout -b feature/branch1
+$ touch allan.txt
+
+-- add the file
+$ git add .
+
+-- commit the changes
+$ git config --global user.email "pobs@ph.ncs-i.com"
+$ git config --global user.name "Aladin Poblete"
+$ git commit -s -m 'Add file allan.txt.'
+
+-- rebase the change from the master
+$ git rebase master
+
+-- merge the changes
+$ git checkout master
+$ git merge feature/branch1
+
+-- push to remote repo
+$ git push origin master
+
+-- check git logs
+$ git log
+
+-- get changes from the remote repo
+$ git pull origin master
+
+-- to get all branches present from remote
+$ git fetch origin 
+
+-- to push your local branch to remote
+$ push origin -u feature/branch1
+
+-- branchout from develop
+$ git checkout -b develop origin/develop
+$ git pull origin develop
+$ git checkout -b feature/branch2 
+
+-- for develop branch push
+$ git checkout develop
+$ git pull origin develop
+$ git checkout feature/branch2
+$ git rebase develop
+$ git checkout develop
+$ git merge feature/branch2
+$ git push origin develop
+
+
+-- create eclipse .project & .classpath
+$ mvn eclipse:eclipse
+
+-- maven clean and install
+$ mvn clean install
+
+-- maven jetty run
+$ mvn jetty:run
+
+

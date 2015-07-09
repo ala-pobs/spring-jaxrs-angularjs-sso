@@ -84,7 +84,7 @@
     </bean>
 
     <sec:user-service id="casUserService">
-        <sec:user name="admin" authorities="ROLE_ADMIN" />
+        <sec:user name="admin" password="admin" authorities="ROLE_ADMIN" />
     </sec:user-service>
 
 

@@ -1,0 +1,19 @@
+-- create user
+curl -vvv -d @user1.json -X POST http://localhost:8002/amaretto-cloud-services/services/admin/users -H 'Content-Type: application/json'
+
+curl -vvv -d @user2.json -X POST http://localhost:8002/amaretto-cloud-services/services/admin/users -H 'Content-Type: application/json'
+
+-- retrieve user
+curl -vvv -X GET http://localhost:8002/amaretto-cloud-services/services/admin/users/user1 -H 'Content-Type: application/json'
+
+curl -vvv -X GET http://localhost:8002/amaretto-cloud-services/services/admin/users/user2 -H 'Content-Type: application/json'
+
+-- retrieve all user
+curl -vvv -X GET http://localhost:8002/amaretto-cloud-services/services/admin/users/ -H 'Content-Type: application/json'
+
+curl -vvv -d @update1.json -X POST http://localhost:8002/amaretto-cloud-services/services/admin/users -H 'Content-Type: application/json'
+
+
+
+-- delete user
+curl -vvv -X DELETE http://localhost:8002/amaretto-cloud-services/services/admin/users/user1
