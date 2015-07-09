@@ -8,11 +8,10 @@
     <version>1.0.0-SNAPSHOT</version>
   </parent>
   <groupId>com.ncs.amaretto</groupId>
-  <artifactId>amaretto-cloud-services</artifactId>
+  <artifactId>amaretto-cloud-janice</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>war</packaging>
-
-  <name>amaretto-cloud-services Maven Webapp</name>
+  <name>amaretto-cloud-janice Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
@@ -23,6 +22,6 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>amaretto-cloud-services</finalName>
+    <finalName>amaretto-cloud-janice</finalName>
   </build>
 </project>
