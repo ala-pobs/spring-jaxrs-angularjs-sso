@@ -21,71 +21,11 @@
 		<contex.path.amaretto-cloud-services>/amaretto-cloud-services</contex.path.amaretto-cloud-services>
 	</properties>
 
-<<<<<<< HEAD
-    <dependencies>
-        <dependency>
-            <groupId>com.ncs.amaretto</groupId>
-            <artifactId>amaretto-cloud-common</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>javax.ws.rs</groupId>
-            <artifactId>javax.ws.rs-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-config</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-cas</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-orm</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-commons-core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.jackson</groupId>
-            <artifactId>jackson-mapper-asl</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.cxf</groupId>
-            <artifactId>cxf-rt-core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.cxf</groupId>
-            <artifactId>cxf-rt-frontend-jaxrs</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.jackson</groupId>
-            <artifactId>jackson-jaxrs</artifactId>
-        </dependency>
-    </dependencies>
-    <build>
-        <finalName>${project.artifactId}</finalName>
-=======
 	<dependencies>
 		<dependency>
 			<groupId>com.ncs.amaretto</groupId>
 			<artifactId>amaretto-cloud-common</artifactId>
 		</dependency>
-		<!-- <dependency> <groupId>at.ac.tuwien.infosys</groupId> <artifactId>jaxb-facets</artifactId> 
-			</dependency> -->
 		<dependency>
 			<groupId>javax.ws.rs</groupId>
 			<artifactId>javax.ws.rs-api</artifactId>
@@ -137,8 +77,6 @@
 	</dependencies>
 	<build>
 		<finalName>${project.artifactId}</finalName>
->>>>>>> feature/maven-webservice
-
 		<plugins>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
