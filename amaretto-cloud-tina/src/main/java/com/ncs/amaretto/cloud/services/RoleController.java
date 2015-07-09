@@ -20,7 +20,7 @@ import com.ncs.amaretto.cloud.model.Role;
 @Consumes(MediaType.APPLICATION_JSON)
 public class RoleController {
 
-	List<Role> listRoles = new ArrayList<>();
+	List<Role> listRoles = new ArrayList<Role>();
 
 	@POST
 	public @ResponseBody Role createRole(@RequestBody Role newRole) {
