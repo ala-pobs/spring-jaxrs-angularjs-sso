@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+ * =========================================================================
+ *  Copyright 2012 NCS Pte. Ltd. All Rights Reserved
+ *
+ *  This software is confidential and proprietary to NCS Pte. Ltd. You shall
+ *  use this software only in accordance with the terms of the license
+ *  agreement you entered into with NCS.  No aspect or part or all of this
+ *  software may be reproduced, modified or disclosed without full and
+ *  direct written authorization from NCS.
+ *
+ *  NCS SUPPLIES THIS SOFTWARE ON AN AS IS BASIS. NCS MAKES NO
+ *  REPRESENTATIONS OR WARRANTIES, EITHER EXPRESSLY OR IMPLIEDLY, ABOUT THE
+ *  SUITABILITY OR NON-INFRINGEMENT OF THE SOFTWARE. NCS SHALL NOT BE LIABLE
+ *  FOR ANY LOSSES OR DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING,
+ *  MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
+ *  =========================================================================
+ */
+ -->
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xmlns:sec="http://www.springframework.org/schema/security"
+    xmlns:jaxrs="http://cxf.apache.org/jaxrs" xmlns:util="http://www.springframework.org/schema/util" xmlns:encryption="http://www.jasypt.org/schema/encryption"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+                        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd
+                        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+                        http://www.jasypt.org/schema/encryption http://www.jasypt.org/schema/encryption/jasypt-spring31-encryption-1.xsd">
+
+    <context:property-placeholder
+        location="classpath:*amaretto-cloud-services.properties, file:*amaretto-cloud-services.properties" />
+
+    <sec:http entry-point-ref="casProcessingFilterEntryPoint">
+        <sec:intercept-url pattern="/services/**" access="ROLE_ADMIN" />
+        <sec:logout logout-success-url="/signout" />
+        <sec:custom-filter ref="casAuthenticationFilter" after="CAS_FILTER" />
+    </sec:http>
+
+    <sec:authentication-manager alias="casAuthenticationManager">
+        <sec:authentication-provider ref="casAuthenticationProvider" />
+    </sec:authentication-manager>
+
+    <bean id="casAuthenticationFilter" class="org.springframework.security.cas.web.CasAuthenticationFilter">
+        <property name="authenticationManager" ref="casAuthenticationManager" />
+        <property name="authenticationFailureHandler">
+            <bean class="org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler">
+                <property name="defaultFailureUrl" value="/casfailed.jsp" />
+            </bean>
+        </property>
+        <!-- 
+        <property name="authenticationSuccessHandler">
+            <bean class="org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler">
+                <property name="defaultTargetUrl" value="/admin/users" />
+            </bean>
+        </property>
+         -->
+        <property name="proxyGrantingTicketStorage" ref="proxyGrantingTicketStorage" />
+        <property name="proxyReceptorUrl" value="/j_spring_cas_security_proxyreceptor" />
+    </bean>
+
+    <bean id="casProcessingFilterEntryPoint" class="org.springframework.security.cas.web.CasAuthenticationEntryPoint">
+        <property name="loginUrl" value="${cas.server.url}/login" />
+        <property name="serviceProperties" ref="serviceProperties" />
+    </bean>
+
+    <bean id="casAuthenticationProvider" class="org.springframework.security.cas.authentication.CasAuthenticationProvider">
+        <property name="userDetailsService" ref="casUserService" />
+        <property name="serviceProperties" ref="serviceProperties" />
+        <property name="ticketValidator">
+            <bean class="org.jasig.cas.client.validation.Cas20ServiceTicketValidator">
+                <constructor-arg index="0" value="${cas.server.url}" />
+                <property name="proxyGrantingTicketStorage" ref="proxyGrantingTicketStorage" />
+                <property name="proxyCallbackUrl" value="${cas.service.url}/j_spring_cas_security_proxyreceptor" />
+            </bean>
+        </property>
+        <property name="key" value="an_id_for_this_auth_provider_only" />
+    </bean>
+
+    <bean id="proxyGrantingTicketStorage" class="org.jasig.cas.client.proxy.ProxyGrantingTicketStorageImpl" />
+
+    <bean id="serviceProperties" class="org.springframework.security.cas.ServiceProperties">
+        <property name="service" value="${cas.service.url}/j_spring_cas_security_check" />
+        <property name="sendRenew" value="false" />
+    </bean>
+
+    <sec:user-service id="casUserService">
+        <sec:user name="admin" password="admin" authorities="ROLE_ADMIN" />
+    </sec:user-service>
+
+
+</beans>
