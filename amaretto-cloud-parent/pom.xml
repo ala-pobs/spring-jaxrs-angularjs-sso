@@ -587,5 +587,8 @@
 		<module>amaretto-cloud-allan</module>
 		<module>amaretto-cloud-tina</module>
 		<module>amaretto-cloud-leod</module>
-  </modules>
+		<module>amaretto-cloud-tina</module>
+		<module>amaretto-cloud-leod</module>
+		<module>amaretto-cloud-jomer</module>
+	</modules>
 </project>
