@@ -34,11 +34,8 @@
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>
-            classpath:META-INF/spring/amaretto-cloud-services-ctx.xml
-            <!-- 
-            ,
+            classpath:META-INF/spring/amaretto-cloud-services-ctx.xml,
             classpath:META-INF/spring/amaretto-cloud-services-cas.xml
-             -->
         </param-value>
     </context-param>
 
@@ -53,7 +50,6 @@
         <url-pattern>/services/*</url-pattern>
     </servlet-mapping>
 
-    <!-- 
     <filter>
         <filter-name>springSecurityFilterChain</filter-name>
         <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
@@ -77,7 +73,6 @@
         <filter-name>casSingleSignOutFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
-     -->
 
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
