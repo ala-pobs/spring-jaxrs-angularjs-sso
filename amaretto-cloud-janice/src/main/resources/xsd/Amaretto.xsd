@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.ncs.com/amaretto"
+    targetNamespace="http://www.ncs.com/amaretto" version="1.0">
+
+    <xs:element name="tPerson" type="tns:Person" />
+
+    <xs:complexType name="Person">
+        <xs:sequence>
+            <xs:element name="ID" type="xs:int" />
+            <xs:element name="FirstName" type="xs:string" />
+            <xs:element name="LastName" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+
+    
+</xs:schema>
