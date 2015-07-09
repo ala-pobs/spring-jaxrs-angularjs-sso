@@ -584,11 +584,10 @@
     <modules>
         <module>amaretto-cloud-services</module>
         <module>amaretto-cloud-common</module>
-		<module>amaretto-cloud-allan</module>
-		<module>amaretto-cloud-tina</module>
-		<module>amaretto-cloud-leod</module>
-		<module>amaretto-cloud-tina</module>
-		<module>amaretto-cloud-leod</module>
-		<module>amaretto-cloud-jomer</module>
-	</modules>
+	<module>amaretto-cloud-allan</module>
+	<module>amaretto-cloud-leod</module>
+	<module>amaretto-cloud-tina</module>
+	<module>amaretto-cloud-leod</module>
+	<module>amaretto-cloud-jomer</module>
+    </modules>
 </project>
