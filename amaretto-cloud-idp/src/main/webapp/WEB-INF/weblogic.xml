@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+ * =========================================================================
+ *  Copyright 2012 NCS Pte. Ltd. All Rights Reserved
+ *
+ *  This software is confidential and proprietary to NCS Pte. Ltd. You shall
+ *  use this software only in accordance with the terms of the license
+ *  agreement you entered into with NCS.  No aspect or part or all of this
+ *  software may be reproduced, modified or disclosed without full and
+ *  direct written authorization from NCS.
+ *
+ *  NCS SUPPLIES THIS SOFTWARE ON AN AS IS BASIS. NCS MAKES NO
+ *  REPRESENTATIONS OR WARRANTIES, EITHER EXPRESSLY OR IMPLIEDLY, ABOUT THE
+ *  SUITABILITY OR NON-INFRINGEMENT OF THE SOFTWARE. NCS SHALL NOT BE LIABLE
+ *  FOR ANY LOSSES OR DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING,
+ *  MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
+ *  =========================================================================
+ */
+ -->
+<weblogic-web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd 
+    http://xmlns.oracle.com/weblogic/weblogic-web-app http://xmlns.oracle.com/weblogic/weblogic-web-app/1.3/weblogic-web-app.xsd"
+    xmlns="http://xmlns.oracle.com/weblogic/weblogic-web-app">
+
+    <context-root>cas-server</context-root>
+    
+    <!--
+    <container-descriptor>
+        <prefer-web-inf-classes>true</prefer-web-inf-classes>
+    </container-descriptor>
+    -->
+
+</weblogic-web-app>
