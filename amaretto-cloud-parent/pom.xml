@@ -590,5 +590,6 @@
     <module>amaretto-cloud-tina</module>
     <module>amaretto-cloud-leod</module>
     <module>amaretto-cloud-jomer</module>
+    <module>amaretto-cloud-allan</module>
   </modules>
 </project>
